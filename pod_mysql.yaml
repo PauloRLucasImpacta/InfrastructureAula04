@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: nginx-pod
+  name: mysql-pod
   labels:
-    app: nginx-pod
+    app: mysql-pod
 spec:
   containers:
-  - name: nginx-pod
+  - name: mysql-pod
     image: mysql
     ports:
       - containerPort: 3306
