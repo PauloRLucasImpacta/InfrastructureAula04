@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: svc-nginx-prod
+spec:
+  selector:
+    app: nginx-pod
+  type: LoadBalance
+  ports:
+    - port: 80
+      targetport: 80
